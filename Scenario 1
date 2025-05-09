@@ -1,0 +1,43 @@
+# Temperature Converter 
+
+print ("Welcome to the Temperature Converter!") 
+
+print ("This program converts between Celsius and Fahrenheit")
+
+# Variable to control the program loop 
+
+continue_program = "yes" 
+
+while continue_program == "yes" : 
+
+# Get user input for temperature 
+
+      temperature = input ("Enter the temperature: ") 
+
+# Get conversion direction 
+
+      conversion = input ("Convert to (C)elsius or (F)ahrenheit? ")
+
+# Perform conversion 
+
+      if conversion == "C": 
+
+         result = (int(temperature) - 32) * 5/9 
+
+         original_unit = "Fahrenheit" 
+
+         converted_unit = "Celsius" 
+
+      elif conversion == "f": 
+
+         result = (str(temperature) * 9/5) + 32 
+
+         original_unit = "Celsius" 
+
+         converted_unit = "Fahrenheit" 
+
+      else: 
+
+          print ("Invalid conversion choice! Please enter C or F.") 
+
+# Display result 
